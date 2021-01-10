@@ -1,13 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package calculator;
 
 /**
  *
- * @author EliteBook
+ * @author Fernando
  */
 public class GUI extends javax.swing.JFrame {
 
@@ -30,70 +26,68 @@ public class GUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton2 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jToolBar1 = new javax.swing.JToolBar();
-        jToggleButton1 = new javax.swing.JToggleButton();
-        jToggleButton2 = new javax.swing.JToggleButton();
-        jToggleButton3 = new javax.swing.JToggleButton();
-        jToggleButton4 = new javax.swing.JToggleButton();
-
-        jButton2.setText("jButton2");
+        wallpaper = new javax.swing.JLabel();
+        menu = new javax.swing.JToolBar();
+        Standard = new javax.swing.JToggleButton();
+        Scientific = new javax.swing.JToggleButton();
+        BinToDec = new javax.swing.JToggleButton();
+        HexToDec = new javax.swing.JToggleButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jToolBar1.setRollover(true);
+        menu.setRollover(true);
 
-        jToggleButton1.setText("Standard Calculator");
-        jToggleButton1.setFocusable(false);
-        jToggleButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jToggleButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jToggleButton1.addActionListener(new java.awt.event.ActionListener() {
+        Standard.setText("Standard Calculator");
+        Standard.setFocusable(false);
+        Standard.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        Standard.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        Standard.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jToggleButton1ActionPerformed(evt);
+                StandardActionPerformed(evt);
             }
         });
-        jToolBar1.add(jToggleButton1);
+        menu.add(Standard);
 
-        jToggleButton2.setText("Scientific calculator");
-        jToggleButton2.setFocusable(false);
-        jToggleButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jToggleButton2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jToolBar1.add(jToggleButton2);
+        Scientific.setText("Scientific calculator");
+        Scientific.setFocusable(false);
+        Scientific.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        Scientific.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        menu.add(Scientific);
 
-        jToggleButton3.setText("Bin to Dec");
-        jToggleButton3.setFocusable(false);
-        jToggleButton3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jToggleButton3.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jToolBar1.add(jToggleButton3);
+        BinToDec.setText("Bin to Dec");
+        BinToDec.setFocusable(false);
+        BinToDec.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        BinToDec.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        menu.add(BinToDec);
 
-        jToggleButton4.setText("Hex to Dec");
-        jToggleButton4.setFocusable(false);
-        jToggleButton4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jToggleButton4.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jToolBar1.add(jToggleButton4);
+        HexToDec.setText("Hex to Dec");
+        HexToDec.setFocusable(false);
+        HexToDec.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        HexToDec.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        menu.add(HexToDec);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jToolBar1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(menu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(wallpaper, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jToolBar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(menu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 396, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(wallpaper, javax.swing.GroupLayout.DEFAULT_SIZE, 396, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jToggleButton1ActionPerformed
+    private void StandardActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_StandardActionPerformed
+        StandardCalc standard = new StandardCalc();
+        standard.setVisible(Standard.isSelected());
+    }//GEN-LAST:event_StandardActionPerformed
 
     /**
      * @param args the command line arguments
@@ -131,12 +125,11 @@ public class GUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JToggleButton jToggleButton1;
-    private javax.swing.JToggleButton jToggleButton2;
-    private javax.swing.JToggleButton jToggleButton3;
-    private javax.swing.JToggleButton jToggleButton4;
-    private javax.swing.JToolBar jToolBar1;
+    private javax.swing.JToggleButton BinToDec;
+    private javax.swing.JToggleButton HexToDec;
+    private javax.swing.JToggleButton Scientific;
+    private javax.swing.JToggleButton Standard;
+    private javax.swing.JToolBar menu;
+    private javax.swing.JLabel wallpaper;
     // End of variables declaration//GEN-END:variables
 }

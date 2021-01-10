@@ -6,6 +6,10 @@
 
 package calculator;
 
+/**
+ *
+ * @author Fernando
+ */
 public class Calc {
-
+    
 }
