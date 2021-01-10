@@ -26,68 +26,519 @@ public class GUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        wallpaper = new javax.swing.JLabel();
-        menu = new javax.swing.JToolBar();
-        Standard = new javax.swing.JToggleButton();
-        Scientific = new javax.swing.JToggleButton();
-        BinToDec = new javax.swing.JToggleButton();
-        HexToDec = new javax.swing.JToggleButton();
+        jTabbedPane1 = new javax.swing.JTabbedPane();
+        StandardPane = new javax.swing.JPanel();
+        btn1 = new javax.swing.JButton();
+        btn3 = new javax.swing.JButton();
+        btnFloat = new javax.swing.JButton();
+        btn2 = new javax.swing.JButton();
+        btn4 = new javax.swing.JButton();
+        btn5 = new javax.swing.JButton();
+        btn6 = new javax.swing.JButton();
+        btn9 = new javax.swing.JButton();
+        btn7 = new javax.swing.JButton();
+        numbers = new javax.swing.JTextField();
+        btn0 = new javax.swing.JButton();
+        btnClear = new javax.swing.JButton();
+        btn8 = new javax.swing.JButton();
+        btnCA = new javax.swing.JButton();
+        btnDelete = new javax.swing.JButton();
+        btnSign = new javax.swing.JButton();
+        ScientificPane = new javax.swing.JPanel();
+        btnScientific1 = new javax.swing.JButton();
+        btnScientific3 = new javax.swing.JButton();
+        btnScientificFloat = new javax.swing.JButton();
+        btnScientific2 = new javax.swing.JButton();
+        btnScientific4 = new javax.swing.JButton();
+        btnScientific5 = new javax.swing.JButton();
+        btnScientific6 = new javax.swing.JButton();
+        btn16 = new javax.swing.JButton();
+        btnScientific7 = new javax.swing.JButton();
+        numbersScientific = new javax.swing.JTextField();
+        btnScientific0 = new javax.swing.JButton();
+        btnScientificClear = new javax.swing.JButton();
+        btnScientific8 = new javax.swing.JButton();
+        Bin2DecPane = new javax.swing.JPanel();
+        decimals = new javax.swing.JTextField();
+        binary = new javax.swing.JTextField();
+        jSeparator2 = new javax.swing.JSeparator();
+        btnBin0 = new javax.swing.JButton();
+        btnBin1 = new javax.swing.JButton();
+        btnTranslate2Bin = new javax.swing.JButton();
+        bin2Decimal = new javax.swing.JTextField();
+        binary2Dec = new javax.swing.JTextField();
+        btnTranslateBin2Dec = new javax.swing.JButton();
+        Hex2DecPane = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        menu.setRollover(true);
-
-        Standard.setText("Standard Calculator");
-        Standard.setFocusable(false);
-        Standard.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        Standard.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        Standard.addActionListener(new java.awt.event.ActionListener() {
+        btn1.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        btn1.setText("1");
+        btn1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                StandardActionPerformed(evt);
+                btn1ActionPerformed(evt);
             }
         });
-        menu.add(Standard);
 
-        Scientific.setText("Scientific calculator");
-        Scientific.setFocusable(false);
-        Scientific.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        Scientific.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        menu.add(Scientific);
+        btn3.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        btn3.setText("3");
 
-        BinToDec.setText("Bin to Dec");
-        BinToDec.setFocusable(false);
-        BinToDec.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        BinToDec.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        menu.add(BinToDec);
+        btnFloat.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        btnFloat.setText(".");
+        btnFloat.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnFloatActionPerformed(evt);
+            }
+        });
 
-        HexToDec.setText("Hex to Dec");
-        HexToDec.setFocusable(false);
-        HexToDec.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        HexToDec.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        menu.add(HexToDec);
+        btn2.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        btn2.setText("2");
+
+        btn4.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        btn4.setText("4");
+
+        btn5.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        btn5.setText("5");
+
+        btn6.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        btn6.setText("6");
+
+        btn9.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        btn9.setText("9");
+        btn9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn9ActionPerformed(evt);
+            }
+        });
+
+        btn7.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        btn7.setText("7");
+
+        numbers.setEditable(false);
+        numbers.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        numbers.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        numbers.setText("0");
+
+        btn0.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        btn0.setText("0");
+        btn0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn0ActionPerformed(evt);
+            }
+        });
+
+        btnClear.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        btnClear.setText("C");
+        btnClear.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnClearActionPerformed(evt);
+            }
+        });
+
+        btn8.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        btn8.setText("8");
+        btn8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn8ActionPerformed(evt);
+            }
+        });
+
+        btnCA.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        btnCA.setText("C/A");
+
+        btnDelete.setFont(new java.awt.Font("Arial", 1, 36)); // NOI18N
+        btnDelete.setText("⌂");
+
+        btnSign.setText("+/-");
+
+        javax.swing.GroupLayout StandardPaneLayout = new javax.swing.GroupLayout(StandardPane);
+        StandardPane.setLayout(StandardPaneLayout);
+        StandardPaneLayout.setHorizontalGroup(
+            StandardPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(StandardPaneLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(StandardPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(StandardPaneLayout.createSequentialGroup()
+                        .addGroup(StandardPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(StandardPaneLayout.createSequentialGroup()
+                                .addComponent(btn4)
+                                .addGap(18, 18, 18)
+                                .addComponent(btn5)
+                                .addGap(18, 18, 18)
+                                .addComponent(btn6))
+                            .addGroup(StandardPaneLayout.createSequentialGroup()
+                                .addGroup(StandardPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(btn7)
+                                    .addComponent(btnFloat))
+                                .addGap(18, 18, 18)
+                                .addGroup(StandardPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addGroup(StandardPaneLayout.createSequentialGroup()
+                                        .addComponent(btn8)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(btn9))
+                                    .addGroup(StandardPaneLayout.createSequentialGroup()
+                                        .addComponent(btn0)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(btnSign, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))))
+                            .addGroup(StandardPaneLayout.createSequentialGroup()
+                                .addGroup(StandardPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, StandardPaneLayout.createSequentialGroup()
+                                        .addComponent(btnClear)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(btnCA, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, StandardPaneLayout.createSequentialGroup()
+                                        .addComponent(btn1)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(btn2)))
+                                .addGap(18, 18, 18)
+                                .addGroup(StandardPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(btn3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(btnDelete, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addGap(168, 168, 168))
+                    .addGroup(StandardPaneLayout.createSequentialGroup()
+                        .addComponent(numbers)
+                        .addContainerGap())))
+        );
+        StandardPaneLayout.setVerticalGroup(
+            StandardPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(StandardPaneLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(numbers, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(StandardPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnClear, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnCA, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnDelete, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(StandardPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btn1)
+                    .addComponent(btn2)
+                    .addComponent(btn3))
+                .addGap(18, 18, 18)
+                .addGroup(StandardPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btn4)
+                    .addComponent(btn5)
+                    .addComponent(btn6))
+                .addGap(18, 18, 18)
+                .addGroup(StandardPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btn7)
+                    .addComponent(btn9)
+                    .addComponent(btn8))
+                .addGap(18, 18, 18)
+                .addGroup(StandardPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(StandardPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(btnFloat)
+                        .addComponent(btn0))
+                    .addComponent(btnSign, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(16, 16, 16))
+        );
+
+        jTabbedPane1.addTab("Standard Calculator", StandardPane);
+
+        btnScientific1.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        btnScientific1.setText("1");
+        btnScientific1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnScientific1ActionPerformed(evt);
+            }
+        });
+
+        btnScientific3.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        btnScientific3.setText("3");
+
+        btnScientificFloat.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        btnScientificFloat.setText(".");
+        btnScientificFloat.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnScientificFloatActionPerformed(evt);
+            }
+        });
+
+        btnScientific2.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        btnScientific2.setText("2");
+
+        btnScientific4.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        btnScientific4.setText("4");
+
+        btnScientific5.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        btnScientific5.setText("5");
+
+        btnScientific6.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        btnScientific6.setText("6");
+
+        btn16.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        btn16.setText("9");
+        btn16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn16ActionPerformed(evt);
+            }
+        });
+
+        btnScientific7.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        btnScientific7.setText("7");
+
+        numbersScientific.setEditable(false);
+        numbersScientific.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        numbersScientific.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        numbersScientific.setText("0");
+
+        btnScientific0.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        btnScientific0.setText("0");
+        btnScientific0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnScientific0ActionPerformed(evt);
+            }
+        });
+
+        btnScientificClear.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        btnScientificClear.setText("C");
+        btnScientificClear.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnScientificClearActionPerformed(evt);
+            }
+        });
+
+        btnScientific8.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        btnScientific8.setText("8");
+        btnScientific8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnScientific8ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout ScientificPaneLayout = new javax.swing.GroupLayout(ScientificPane);
+        ScientificPane.setLayout(ScientificPaneLayout);
+        ScientificPaneLayout.setHorizontalGroup(
+            ScientificPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ScientificPaneLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(ScientificPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(numbersScientific)
+                    .addGroup(ScientificPaneLayout.createSequentialGroup()
+                        .addGroup(ScientificPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnScientificClear)
+                            .addGroup(ScientificPaneLayout.createSequentialGroup()
+                                .addComponent(btnScientific1)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnScientific2)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnScientific3))
+                            .addGroup(ScientificPaneLayout.createSequentialGroup()
+                                .addComponent(btnScientific4)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnScientific5)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnScientific6))
+                            .addGroup(ScientificPaneLayout.createSequentialGroup()
+                                .addGroup(ScientificPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(btnScientific7)
+                                    .addComponent(btnScientificFloat))
+                                .addGap(18, 18, 18)
+                                .addGroup(ScientificPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(btnScientific0)
+                                    .addGroup(ScientificPaneLayout.createSequentialGroup()
+                                        .addComponent(btnScientific8)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(btn16)))))
+                        .addGap(0, 162, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        ScientificPaneLayout.setVerticalGroup(
+            ScientificPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ScientificPaneLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(numbersScientific, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnScientificClear)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(ScientificPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnScientific1)
+                    .addComponent(btnScientific2)
+                    .addComponent(btnScientific3))
+                .addGap(18, 18, 18)
+                .addGroup(ScientificPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnScientific4)
+                    .addComponent(btnScientific5)
+                    .addComponent(btnScientific6))
+                .addGap(18, 18, 18)
+                .addGroup(ScientificPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnScientific7)
+                    .addComponent(btn16)
+                    .addComponent(btnScientific8))
+                .addGap(18, 18, 18)
+                .addGroup(ScientificPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnScientificFloat)
+                    .addComponent(btnScientific0))
+                .addContainerGap(16, Short.MAX_VALUE))
+        );
+
+        jTabbedPane1.addTab("Scientific Calculator", ScientificPane);
+
+        decimals.setEditable(false);
+        decimals.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        decimals.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        decimals.setText("0");
+
+        binary.setEditable(false);
+        binary.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        binary.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        binary.setText("0");
+
+        btnBin0.setText("0");
+
+        btnBin1.setText("1");
+
+        btnTranslate2Bin.setText("Translate");
+
+        bin2Decimal.setEditable(false);
+        bin2Decimal.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        bin2Decimal.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        bin2Decimal.setText("0");
+
+        binary2Dec.setEditable(false);
+        binary2Dec.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        binary2Dec.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        binary2Dec.setText("0");
+
+        btnTranslateBin2Dec.setText("Translate");
+
+        javax.swing.GroupLayout Bin2DecPaneLayout = new javax.swing.GroupLayout(Bin2DecPane);
+        Bin2DecPane.setLayout(Bin2DecPaneLayout);
+        Bin2DecPaneLayout.setHorizontalGroup(
+            Bin2DecPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jSeparator2)
+            .addGroup(Bin2DecPaneLayout.createSequentialGroup()
+                .addGroup(Bin2DecPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(bin2Decimal, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 366, Short.MAX_VALUE)
+                    .addGroup(Bin2DecPaneLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(Bin2DecPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(binary, javax.swing.GroupLayout.DEFAULT_SIZE, 360, Short.MAX_VALUE)
+                            .addComponent(decimals)))
+                    .addGroup(Bin2DecPaneLayout.createSequentialGroup()
+                        .addGap(126, 126, 126)
+                        .addComponent(btnBin0, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(75, 75, 75)
+                        .addComponent(btnBin1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Bin2DecPaneLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(btnTranslateBin2Dec)
+                .addGap(141, 141, 141))
+            .addGroup(Bin2DecPaneLayout.createSequentialGroup()
+                .addGap(146, 146, 146)
+                .addComponent(btnTranslate2Bin)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(Bin2DecPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(Bin2DecPaneLayout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(binary2Dec, javax.swing.GroupLayout.DEFAULT_SIZE, 360, Short.MAX_VALUE)
+                    .addContainerGap()))
+        );
+        Bin2DecPaneLayout.setVerticalGroup(
+            Bin2DecPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Bin2DecPaneLayout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addComponent(binary, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(Bin2DecPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnBin0, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnBin1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnTranslateBin2Dec)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(decimals, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 75, Short.MAX_VALUE)
+                .addComponent(btnTranslate2Bin)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(bin2Decimal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(38, 38, 38))
+            .addGroup(Bin2DecPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Bin2DecPaneLayout.createSequentialGroup()
+                    .addContainerGap(235, Short.MAX_VALUE)
+                    .addComponent(binary2Dec, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(129, 129, 129)))
+        );
+
+        jTabbedPane1.addTab("Bin2Dec", Bin2DecPane);
+
+        javax.swing.GroupLayout Hex2DecPaneLayout = new javax.swing.GroupLayout(Hex2DecPane);
+        Hex2DecPane.setLayout(Hex2DecPaneLayout);
+        Hex2DecPaneLayout.setHorizontalGroup(
+            Hex2DecPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 372, Short.MAX_VALUE)
+        );
+        Hex2DecPaneLayout.setVerticalGroup(
+            Hex2DecPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 418, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("Hex2Dec", Hex2DecPane);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(menu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(wallpaper, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jTabbedPane1)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(menu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(wallpaper, javax.swing.GroupLayout.DEFAULT_SIZE, 396, Short.MAX_VALUE))
+            .addComponent(jTabbedPane1)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void StandardActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_StandardActionPerformed
-        StandardCalc standard = new StandardCalc();
-        standard.setVisible(Standard.isSelected());
-    }//GEN-LAST:event_StandardActionPerformed
+    private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn1ActionPerformed
+
+    private void btnFloatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFloatActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnFloatActionPerformed
+
+    private void btn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn9ActionPerformed
+
+    private void btn0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn0ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn0ActionPerformed
+
+    private void btnClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClearActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnClearActionPerformed
+
+    private void btn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn8ActionPerformed
+
+    private void btnScientific1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnScientific1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnScientific1ActionPerformed
+
+    private void btnScientificFloatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnScientificFloatActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnScientificFloatActionPerformed
+
+    private void btn16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn16ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn16ActionPerformed
+
+    private void btnScientific0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnScientific0ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnScientific0ActionPerformed
+
+    private void btnScientificClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnScientificClearActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnScientificClearActionPerformed
+
+    private void btnScientific8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnScientific8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnScientific8ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -125,11 +576,48 @@ public class GUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JToggleButton BinToDec;
-    private javax.swing.JToggleButton HexToDec;
-    private javax.swing.JToggleButton Scientific;
-    private javax.swing.JToggleButton Standard;
-    private javax.swing.JToolBar menu;
-    private javax.swing.JLabel wallpaper;
+    private javax.swing.JPanel Bin2DecPane;
+    private javax.swing.JPanel Hex2DecPane;
+    private javax.swing.JPanel ScientificPane;
+    private javax.swing.JPanel StandardPane;
+    private javax.swing.JTextField bin2Decimal;
+    private javax.swing.JTextField binary;
+    private javax.swing.JTextField binary2Dec;
+    private javax.swing.JButton btn0;
+    private javax.swing.JButton btn1;
+    private javax.swing.JButton btn16;
+    private javax.swing.JButton btn2;
+    private javax.swing.JButton btn3;
+    private javax.swing.JButton btn4;
+    private javax.swing.JButton btn5;
+    private javax.swing.JButton btn6;
+    private javax.swing.JButton btn7;
+    private javax.swing.JButton btn8;
+    private javax.swing.JButton btn9;
+    private javax.swing.JButton btnBin0;
+    private javax.swing.JButton btnBin1;
+    private javax.swing.JButton btnCA;
+    private javax.swing.JButton btnClear;
+    private javax.swing.JButton btnDelete;
+    private javax.swing.JButton btnFloat;
+    private javax.swing.JButton btnScientific0;
+    private javax.swing.JButton btnScientific1;
+    private javax.swing.JButton btnScientific2;
+    private javax.swing.JButton btnScientific3;
+    private javax.swing.JButton btnScientific4;
+    private javax.swing.JButton btnScientific5;
+    private javax.swing.JButton btnScientific6;
+    private javax.swing.JButton btnScientific7;
+    private javax.swing.JButton btnScientific8;
+    private javax.swing.JButton btnScientificClear;
+    private javax.swing.JButton btnScientificFloat;
+    private javax.swing.JButton btnSign;
+    private javax.swing.JButton btnTranslate2Bin;
+    private javax.swing.JButton btnTranslateBin2Dec;
+    private javax.swing.JTextField decimals;
+    private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JTextField numbers;
+    private javax.swing.JTextField numbersScientific;
     // End of variables declaration//GEN-END:variables
 }
